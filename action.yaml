@@ -1,0 +1,13 @@
+name: setup Github Token
+description: This action takes a base64 blob and setups up a ghs_token
+inputs:
+  GH_APP_TOKEN:
+    description: "base64 blob"
+    required: true
+    default: ""
+outputs:
+  GH_TOKEN: 
+    description: Token to checkout private repositories
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
