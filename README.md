@@ -29,7 +29,7 @@ to make API calls under the github applications credentials.
 ```yaml
 uses: actions/setup-gh-token@v1
 with:
-  who-to-greet: 'Mona the Octocat'
+  GH_APP_TOKEN: ${{secrets.GH_APP_TOKEN}}
 ```
 
 
