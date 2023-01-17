@@ -1,5 +1,7 @@
 name: setup Github Token
 description: This action takes a base64 blob and setups up a ghs_token
+icon: activity
+color: green
 inputs:
   GH_APP_TOKEN:
     description: "base64 blob"
