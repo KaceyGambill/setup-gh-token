@@ -34047,9 +34047,9 @@ const github = __nccwpck_require__(2726);
 
 try {
 
-  const gh_token = process.env.GH_APP_TOKEN;
+  const gh_app_token = core.getInput('GH_APP_TOKEN', {required: true});
   
-  const decoded = JSON.parse(Buffer.from(gh_token, 'base64').toString('utf8'));
+  const decoded = JSON.parse(Buffer.from(gh_app_token, 'base64').toString('utf8'));
   
   const appId = decoded['appId'];
   const installationId = decoded['installationId'];
